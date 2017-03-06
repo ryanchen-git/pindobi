@@ -1,0 +1,358 @@
+@charset "utf-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Tag selector */
+body { font-size: 13px; line-height: 1.6em; font-family: Verdana, Arial, Helvetica, sans-serif; color: #666; }
+h1 { color: #5F9D10; font-size: 18px; margin: 0px 0px 15px 0px; background: url(../img/quote.gif) no-repeat left; line-height: 52px; padding: 0px 0px 5px 60px; border-bottom: 1px dashed #CCC; width: 425px; }
+form { font-size: 13px; }
+form input { height: 16px; font-size: 13px; border: 1px solid #999999; }
+
+/* Link */
+a:link { color: #098BF7; text-decoration: underline; }
+a:visited { color:#098BF7; }
+a:hover { color:#098BF7; text-decoration: none; }
+a:active { color:#098BF7;}
+
+/* Base layout */
+#body_wrapper { width: 960px; margin: 0 auto; }
+#above_header { overflow: hidden; margin-bottom: 2px; height: 20px; }
+#header { background: url(../img/top_bg.gif) repeat-x; height: 150px; }
+#content_wrapper { background-color: #FFFFFF; overflow: hidden; margin: 20px 0px 20px 0px; }
+#content_wrapper_business_view { background: url(../img/bg.gif) repeat-y; overflow: hidden; margin: 20px 0px 20px 0px; }
+#content { float: left; width: 635px; margin: 0px 0px 0px 0px; padding: 0px 20px 0px 20px; border-right: 1px solid #CCC; }
+#sidebar { float: right; width: 265px; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; }
+#footer { background: url(../img/content_bg.gif) repeat-x; clear: both; padding: 20px 0px 10px 0px; text-align: center; }
+
+/* Base layout2 - for the special login and signup page */
+#content2 { float: left; width: 535px; margin: 0px 0px 0px 0px; padding: 0px 20px 0px 20px; border-right: 1px solid #CCC; }
+#sidebar2 { float: right; width: 345px; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; }
+#sidebar2 h2 { color: #0094E0; font-size: 18px; margin: 10px 0px; }
+
+/* Base layout3 - for page w/o left or right nav */
+#content3 { margin: 0px 0px 0px 0px; padding: 0px 20px 0px 20px; overflow: hidden; }
+
+/* Sidebar */
+#sidebar h2 { color: #5F9D10; font-size: 18px; margin: 10px 0px; width: 260px; }
+#sidebar ul { margin-bottom: 0px; }
+#sidebar li { padding: 1px 0px 0px 10px; width: 220px; }
+#sidebar #google_map_small { border: 1px solid #ccc; width: 239px; height: 246px; margin-bottom: 10px; }
+#sidebar .related { padding: 10px 0px 10px 0px; margin-top: 10px; border-top: 1px solid #ccc; }
+#sidebar .related ul { margin-top: 5px; }
+#sidebar .related li { padding: 5px 0px; border-bottom: 1px dotted #CCC; width: 260px; }
+#sidebar .column { float: left; width: 130px; }
+#sidebar .city { overflow: hidden; width: 260px; border-bottom: 1px solid #CCC; padding-bottom: 15px; margin-bottom: 15px; } 
+#sidebar .city ul { float: left; width: 85px; }
+#sidebar .latest_review { clear: both; }
+#sidebar .latest_review .title { overflow: hidden; font-size: 13px; margin: 10px 0px 0px 0px; }
+#sidebar .latest_review .profile_photo { float: left; width: 60px; }
+#sidebar .latest_review .review { width: 260px; padding-bottom: 10px; border-bottom: 1px dashed #CCC; min-height: 55px; }
+
+/* Common form */
+#business ol, #write_review ol, #signup ol, #login ol, #forgot ol, #info ol, #password_change ol , #password_reset ol { padding: 15px 15px 0px 15px; }
+#business li, #write_review li, #login2 li, #signup li, #login li, #forgot li , #info li, #password_change li, #password_reset li { padding-bottom: 13px; }
+
+#business label.display, #write_review label.display, #signup label.display, #login label.display, #forgot label.display, #info label.display, #password_change label.display, #password_reset label.display { 
+	float: left; width: 100px; margin-right: 15px;
+}
+#signup input, #login input, #forgot input, #info input, #password_change input, #password_reset input { width: 200px; }
+
+#forgot .forgot_submit, #info #info_submit, #password_change #password_submit, #password_reset #password_reset_submit { 
+	background-image: url(../img/confirm.gif); width: 82px; height: 32px; border: none; margin-left: 255px; color: #FFF; font-weight: bold; font-size: 12px; cursor: pointer;
+}
+#signup label.error, #login2 label.error, #business label.error, #write_review label.error, #login label.error, #forgot label.error, #info label.error, #password_change label.error, #password_reset label.error { 
+	background: url(../img/unchecked.gif) no-repeat 0px 0px; padding-left: 16px; padding-bottom: 2px; font-weight: bold; color: #EA5200; margin-left: 5px;
+}
+
+#business div, #write_review div, #signup div { margin-bottom: 15px; }
+
+/* File uploads */
+.file_upload { margin-top: 10px; }
+.file_upload .image_file { background: #fff; color: #888; }
+.file_upload .upload_submit { background-image: url(../img/confirm.gif); width: 82px; height: 32px; border: none; margin-top: 15px; color: #FFF; font-weight: bold; font-size: 12px; cursor: pointer; }
+.uploaded_photo { margin: 20px 0px 10px 0px; }
+
+/* Common style */
+.photo { border: 1px solid #999999; padding: 1px; }
+.top_status_bar { width: 960px; background-color: #EA5200; text-align: left; font-size: 13px; color: #fff; margin-bottom: 15px; padding: 0px 0px 3px 5px; }
+.top_status_bar_short { width: 920px; background-color: #EA5200; text-align: left; font-size: 13px; margin-bottom: 20px; color: #fff; padding-left: 5px; }
+.displayLoading { background: url(../img/progressbar.gif) no-repeat; }
+
+/*--------------------------------------------------- header.php -------------------------------------------------------------------*/
+/* Above Header */
+#above_header .text { float: right; background-color: #fff; }
+
+#header .logo { float: left; margin: 15px 0px 12px 30px; }
+#header #nav { background: url(../img/top_nav.gif) repeat; margin-top: 10px; overflow: hidden; clear: both; }
+#header #nav li { list-style: none; float: left; line-height: 30px; font-size: 13px; border-right: 1px dotted #FFF; }
+#header #nav li a { text-decoration: none; display: block; float: left; padding: 3px 20px; color: #FFF; }
+#header #nav li a:hover { background-color: #69a712; }
+
+/* Header Search form */
+#search_form { float: left; margin: 25px 0px 0px 40px; font-size: 14px; color: #5F9D10; font-weight: bold; width: 620px; overflow: hidden; background-color: #FFFFFF; padding: 5px 0px 5px 10px; border: 1px solid #5f9d10; }
+#search_form input { background: url(../img/input_bg.gif) no-repeat; width: 250px; height: 22px; font-size: 17px; border: 1px solid #999; color: #333333; padding: 3px 0px 1px 5px; }
+#search_form .input { float: left; width: 250px; margin-right: 15px; }
+#search_form label span .example { color: #6D6D6D; font-size: 13px; font-weight: normal; }
+#search_form .submit_btn { float: left; width: 80px; padding-top: 19px; }
+#search_form .search_submit { background-image: url(../img/search.gif); width: 82px; height: 32px; border: none; color: #FFF; font-weight: bold; font-size: 12px; cursor: pointer; }
+
+/*--------------------------------------------------- footer.php -------------------------------------------------------------------*/
+#copyright { margin-top: 5px; }
+
+/*--------------------------------------------------- about.php -------------------------------------------------------------------*/
+.terms { width: 930px; height: 600px; }
+
+/*--------------------------------------------------- business.php -------------------------------------------------------------------*/
+/* Business view */
+#business_view .pictures { float: right; width: 120; height: 160px; }
+#business_view .pictures img { border: 1px solid #999; padding: 1px; margin-bottom: 5px; }
+#business_view .info { border-bottom: 1px solid #CCC; }
+#business_view .info .category { margin: 5px 0px 5px 0px; }
+#business_view .info .action { margin: 20px 0px 10px 0px; padding-bottom: 0px; }
+#business_view .comments { margin: 10px 0px 10px 0px; }
+#business_view .comments .header { background-color: #69a712; color: #fff; padding: 2px 2px 2px 5px; }
+#business_view .comments .sort { margin: 0px 0px 5px 0px; }
+#business_view .comments .review_area { border-bottom: 1px solid #CCC; overflow: hidden; margin: 15px 0px 0px 0px; padding: 0px 0px 5px 0px; }
+#business_view .review_area .user { float: left; width: 90px; margin-right: 10px; }
+#business_view .review_area .review { float: left; width: 533px; margin-bottom: 0px; }
+#business_view .review_area .rate_date { padding: 0px 0px 10px 0px; }
+#business_view .review_area .star_image { float: left; width: 90px; }
+#business_view .review_area .review_text { margin-bottom: 10px; min-height: 32px; }
+#business_view .review_area .useful { float: left; }
+
+/* Business info form */
+#business input { width: 350px; }
+#business .city { width: 80px; }
+#business .category { width: 90px; }
+#business .business_submit { background-image: url(../img/confirm.gif); width: 82px; height: 32px; border: none; margin-left: 405px; color: #FFF; font-weight: bold; font-size: 12px; cursor: pointer; }
+
+/* Write review form */
+#write_review input { width: 350px; }
+#write_review .city { width: 70px; }
+#write_review .category { width: 130px; }
+#write_review .write_review_submit { background-image: url(../img/confirm.gif); width: 82px; height: 32px; border: none; margin-left: 390px; color: #FFF; font-weight: bold; font-size: 12px; cursor: pointer; }
+
+/* Review rating form */
+#rating_form .text { float: left; width: 100px; padding: 15px 15px 0px 15px; }
+#rating_form #star_rating { float: left; padding: 8px 0px 0px 0px; }
+#rating_form #stars-cap { float: left; margin-left: 18px; padding-top: 15px; }
+#rating_form textarea { float: left; margin-top: 17px; width: 355px; height: 120px; }
+#rating_form .write_review_submit { background-image: url(../img/confirm.gif); width: 82px; height: 32px; border: none; margin: 15px 0px 0px 410px; color: #FFF; font-weight: bold; font-size: 12px; cursor: pointer; }
+#rating_form .clear { clear: both; }
+#rating_form label.error { background: url(../img/unchecked.gif) no-repeat 0px 2px; float: left; font-weight: bold; color: #EA5200; margin-top: 16px; margin-left: 6px; padding-left: 16px; }
+
+.business_photo { overflow: hidden; }
+.business_photo p { float: left; margin: 20px 0px; }
+.business_photo img { margin: 0px 45px 2px 0px; border: 1px solid #999; padding: 1px; }
+#google_map_big { width: 920px; height: 500px; border: 1px solid #ccc; margin: 15px 0px; }
+
+/*--------------------------------------------------- delete.php -------------------------------------------------------------------*/
+#content_delete { text-align: center; margin-top: 20px; }
+#content_delete span { color: #5F9D10; }
+#delete_submit { background-image: url(../img/confirm.gif); width: 82px; height: 32px; border: none; color: #FFF; font-weight: bold; font-size: 12px; cursor: pointer; }
+#content_delete p { margin: 5px 0px; }
+
+/*--------------------------------------------------- login.php -------------------------------------------------------------------*/
+/* Login form */
+#login .login_submit { background-image: url(../img/login.gif); width: 82px; height: 32px; border: none; margin-left: 255px; color: #FFF; font-weight: bold; font-size: 12px; cursor: pointer; }
+#login .forgot { margin-left: 115px; }
+
+/*--------------------------------------------------- main.php -------------------------------------------------------------------*/
+.business_section { width: 635px; overflow: hidden; margin-bottom: 30px; }
+.business_section .latest { float: left; width: 210px; }
+.business_section .latest .title { color: #5F9D10; font-size: 13px; }
+.business_section .latest img { margin-bottom: 10px; }
+.business_section .latest ol { list-style: decimal; padding-left: 20px; }
+
+.welcome_box { border: 1px solid #CCC; width: 620px; margin-bottom: 15px; padding: 5px; overflow: hidden; }
+.welcome_box img { float: left; margin: 0px 10px 5px 0px; }
+.welcome_box .info { float: left; }
+.welcome_box .title { font-size: 16px; font-weight: bold; color: #5F9D10; margin-bottom: 4px; }
+.welcome_box p { padding-top: 1px; }
+
+/*--------------------------------------------------- member.php -------------------------------------------------------------------*/
+#top_sub_nav { margin: 5px auto 0px auto;  border-bottom: 1px solid #CCCCCC; text-align: center; padding-bottom: 5px; }
+#top_sub_nav li { display: inline; font-size: 13px; }
+
+#member_content { float: left; width: 515px; margin: 20px 0px 0px 0px; padding: 0px 20px 0px 20px; border-left: 1px solid #CCC; border-right: 1px solid #CCC; min-height: 185px; }
+#member_content .header { background-color: #69a712; color: #fff; padding: 2px 0px; text-align: center; margin-bottom: 15px; }
+
+#member_sidebar_right { float: left; width: 170px; margin: 20px 0px 0px 0px; padding: 0px 0px 0px 20px; }
+#member_sidebar_left { float: left; width: 170px; margin: 20px 0px 0px 0px; padding: 0px 20px 0px 20px; }
+#member_sidebar_left img { margin-bottom: 20px; }
+#member_sidebar_left p { margin-bottom: 10px; }
+#member_sidebar_left span { display: block; font-weight: bold; }
+#member_sidebar_left .name { font-size: 16px; font-weight: bold; margin-bottom: 10px; }
+
+#member_content .review_area { overflow: hidden; padding-bottom: 5px; margin-bottom: 15px; border-bottom: 1px solid #CCCCCC; }
+#member_content .review_area .biz_info { margin-bottom: 10px; overflow: hidden; } 
+#member_content .review_area .biz_info .column_left { float: left; width: 220px; }
+#member_content .review_area .biz_info .column_right { float: right; width: 270px; text-align: right; }
+#member_content .review_area .rate_date { margin: 5px 0px 8px 0px; }
+#member_content .review_area .option { float: left; margin-top: 5px; width: 510px; }
+#member_content .review_area .usefulness { float: left; }
+#member_content .review_area .delete { text-align: right; }
+#member_content .review_area .star_image { float: left; width: 90px; }
+
+#member_content .bookmark { border-bottom: 1px solid #ccc; padding-bottom: 7px; margin-bottom: 10px; }
+#member_content .bookmark .delete { text-align: right; }
+
+#member_content .business_photo p { float: left; margin: 0px 0px 15px 0px; width: 80px; padding-right: 5px; }
+#member_content .business_photo img { margin: 0px 39px 2px 0px; border: 1px solid #999; padding: 1px; }
+
+/*--------------------------------------------------- profile.php -------------------------------------------------------------------*/
+/* Info form */
+#info .name { margin-right: 80px; }
+#info #lastname { width: 60px }
+#info #firstname { width: 94px }
+
+.profile_column_left { float: left; width: 450px; }
+.profile_column_right { float: right; width: 450px; }
+.profile_section { width: 428px; border: 1px solid #CCCCCC; margin-bottom: 10px; padding: 5px 10px; overflow: hidden; }
+.profile_section h2 { font-size: 18px; color: #5F9D10; margin-bottom: 10px; }
+.profile_section .link { float: right; width: 180px; text-align: right; }
+.profile_section img { margin-bottom: 5px; border: 1px solid #999999; }
+.profile_section span { font-weight: bold; }
+
+/*--------------------------------------------------- search.php -------------------------------------------------------------------*/
+/* Search page */
+.search_business_area { border-bottom: 1px dashed #CCC; overflow: hidden; margin: 0px 0px 10px 0px; padding: 0px 0px 10px 0px; }
+.search_business_area .title { font-size: 14px; font-weight: bold; }
+.search_business_area .name { float: left; width: 210px; padding: 0px 10px 0px 0px; }
+.search_business_area .biz_info { float: left; width: 285px; padding: 0px 0px 0px 0px; }
+.search_business_area .review { float: left; width: 130px; margin: 37px 0px 0px 0px; }
+
+/* Pagination - set in controller */
+.num_tag_open { float: left; border: 1px solid #CCC; width: 20px; margin: 0px 2px; text-align: center; }
+.next_tag_open, .last_tag_open, .first_tag_open, .prev_tag_open { float: left; border: 1px solid #CCC; width: 60px; margin: 0px 2px; text-align: center; }
+.num_tag_open a, .next_tag_open a, .last_tag_open a, .first_tag_open a, .prev_tag_open a { display: block; text-decoration: none; }
+.num_tag_open a:hover, .next_tag_open a:hover, .last_tag_open a:hover, .first_tag_open a:hover, .prev_tag_open a:hover { background-color: #5F9D10; color: #fff; }
+.cur_tag_open { float: left; padding: 1px 5px; font-weight: bold; }
+.full_tag_open { overflow: hidden; margin-top: 20px; }
+
+.category_list_top_nav { margin: 5px 0px 20px 0px; overflow: hidden; border: 1px solid #CCC; padding: 10px; }
+.category_list_top_nav ul { float: left; width: 120px; }
+
+/*--------------------------------------------------- signup.php -------------------------------------------------------------------*/
+/* Signup form */
+#signup .name { margin-right: 80px; }
+#signup #gender { width: 55px; }
+#signup .city { width: 75px; }
+#signup .birth_year { width: 65px; }
+#signup .birth_month, #signup .birth_date { width: 45px; }
+#signup #lastname { width: 60px }
+#signup #firstname { width: 94px }
+#signup #signup_submit { background-image: url(../img/signup.gif); width: 82px; height: 32px; border: none; margin-left: 255px; color: #FFF; font-weight: bold; font-size: 12px; cursor: pointer; }
+#signup .agree { margin-top: 10px; }
+
+/* Login2 form */
+#login2 ol { padding: 15px 15px 0px 0px; }
+#login2 label.display { float: left; width: 100px; }
+#login2 input { width: 195px; }
+#login2 .login2_submit { background-image: url(../img/login.gif); width: 82px; height: 32px; border: none; margin-left: 220px; color: #FFF; font-weight: bold; font-size: 12px; cursor: pointer; }
+#login2 .forgot { margin-left: 100px; }
+
+.ad_banner { margin-bottom: 10px; height: 200px; width: 300px; }
+.signin { font-size: 12px; color: #999; }
+
+/*--------------------------------------------------- autocomplete -------------------------------------------------------------------*/
+.ac_results {
+	padding: 0px;
+	border: 1px solid #999999;
+	background-color: white;
+	overflow: hidden;
+	z-index: 99999;
+}
+
+.ac_results ul {
+	width: 100%;
+	list-style-position: outside;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ac_results li {
+	margin: 0px;
+	padding: 2px 5px;
+	cursor: default;
+	display: block;
+	/* 
+	if width will be 100% horizontal scrollbar will apear 
+	when scroll mode will be used
+	*/
+	/*width: 100%;*/
+	font: menu;
+	font-size: 12px;
+	/* 
+	it is very important, if line-height not setted or setted 
+	in relative units scroll will be broken in firefox
+	*/
+	line-height: 16px;
+	overflow: hidden;
+}
+
+.ac_loading {
+	background: white url('indicator.gif') right center no-repeat;
+}
+
+.ac_odd {
+}
+
+.ac_over {
+	background-color: #cee4d0;
+}
+
+/* green: #5F9D10 blue: #0094E0  grey: #6D6D6D */
